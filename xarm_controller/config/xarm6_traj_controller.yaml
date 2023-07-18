@@ -1,7 +1,7 @@
 # xarm:
 joint_state_controller:
   type: joint_state_controller/JointStateController
-  publish_rate: 50
+  publish_rate: 100
   
 xarm6_traj_controller:
   type: position_controllers/JointTrajectoryController
@@ -22,8 +22,8 @@ xarm6_traj_controller:
       joint5: {trajectory: 1, goal: 0.01}
       joint6: {trajectory: 1, goal: 0.01}
   stop_trajectory_duration: 0.2
-  state_publish_rate:  25
-  action_monitor_rate: 10
+  state_publish_rate:  100
+  action_monitor_rate: 100
 
 xarm6_traj_controller_velocity:
   type: velocity_controllers/JointTrajectoryController
